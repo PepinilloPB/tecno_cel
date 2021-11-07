@@ -1,0 +1,13 @@
+<!--p>celulares works!</p-->
+<div class="col-md-4" *ngFor='let cell of cells'>
+    <div class="card text-center">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            {{cell.model}}
+        </div>
+        <img [src]="cell.image" class="card-img-top">
+        <div class="card-body">
+            <p>{{cell.description}}</p>
+            <p>{{cell.price}}$</p>
+        </div>
+    </div>
+</div>
